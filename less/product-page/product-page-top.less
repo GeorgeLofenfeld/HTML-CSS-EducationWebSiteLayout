@@ -1,0 +1,129 @@
+.product-top-wrp {
+  background-color: #f8f3f4;
+}
+.product-items-product-page {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+.product-page-top-main {
+  border: 1px solid #eaeaea;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 777px;
+  &-switch {
+    background: #c4c4c4;
+    border: none;
+    cursor: pointer;
+    padding: 13px 15px;
+    &-svg {
+      fill: black;
+      transition: fill 0.4s;
+    }
+  }
+  &-switch:hover,
+  &-switch:hover > &-switch-svg {
+    fill: @decor-color;
+  }
+}
+.catalog-choise-block-product-page {
+  margin: 0;
+}
+.product-page-middle-main {
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0 65px 0;
+  margin-top: -63px;
+  background: white;
+  position: relative;
+  &-subtitle {
+    margin-bottom: 27px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: @decor-color;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background: @decor-color;
+      width: 63px;
+      height: 3px;
+      top: 29px;
+      left: 47px;
+    }
+  }
+  &-title {
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+  }
+  &-text {
+    max-width: 570px;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5e5e5e;
+    opacity: 0.8;
+  }
+  &-price {
+    margin-bottom: 130px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: @decor-color;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background: #eaeaea;
+      width: 642px;
+      height: 1px;
+      top: 93px;
+      left: -300px;
+    }
+  }
+  &-button {
+    margin-top: 48px;
+  }
+  &-button {
+    background: transparent;
+    border: 1px solid @decor-color;
+    color: @decor-color;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 57px 9px 24px;
+    transition: all 0.4s;
+    &-svg {
+      fill: @decor-color;
+      margin-right: 22px;
+      transition: fill 0.4s;
+    }
+    &:hover {
+      background: @decor-color;
+      color: white;
+    }
+    &:hover &-svg {
+      fill: white;
+    }
+    &:active {
+      background: transparent;
+      color: @decor-color;
+    }
+    &:active &-svg {
+      fill: @decor-color;
+    }
+  }
+}

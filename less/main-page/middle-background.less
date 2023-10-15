@@ -1,0 +1,45 @@
+.middle-background {
+  background-color: #f1e4e6;
+  margin: 0 0 65px 0;
+  .middle-back {
+    min-height: 768px;
+    background-image: url(../img/man.png);
+    background-repeat: no-repeat;
+    background-position-x: -230px;
+    .banner {
+      display: flex;
+      flex-direction: column;
+      padding: 25% 0 0 58%;
+      .brand,
+      .fashion,
+      .of {
+        text-transform: uppercase;
+        font-weight: 900;
+        min-width: 100%;
+        font-weight: 900;
+      }
+      .brand {
+        font-size: 48px;
+        line-height: 58px;
+        position: relative;
+      }
+      .of {
+        font-size: 32px;
+        line-height: 38px;
+        .fashion {
+          color: @decor-color;
+        }
+      }
+    }
+    .brand::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 12px;
+      height: 92px;
+      background-color: @decor-color;
+      top: -1px;
+      left: -25px;
+    }
+  }
+}

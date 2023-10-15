@@ -1,0 +1,93 @@
+.account-page-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 96px;
+  &-left {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      text-transform: none;
+    }
+    &-btn {
+      max-width: 167px;
+      background: @decor-color;
+      color: white;
+      border: none;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      padding: 16px 0 16px 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.4s;
+      fill: white;
+      &:hover {
+        background: transparent;
+        outline: 1px solid @decor-color;
+        color: @decor-color;
+        fill: @decor-color;
+      }
+      &:active {
+        background: @decor-color;
+        color: white;
+        border: none;
+        fill: white;
+      }
+    }
+    &-text {
+      max-width: 359px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+      margin-bottom: 39px;
+    }
+    &-input {
+      margin-bottom: 0;
+    }
+    &-radio-block {
+      display: flex;
+      margin-bottom: 31px;
+      margin-top: 31px;
+      &-items {
+        display: flex;
+        gap: 10px;
+        padding-right: 20px;
+        &-text {
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+  &-right {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &-title {
+      text-transform: uppercase;
+    }
+    &-title,
+    &-subtitle,
+    &-items {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &-items {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &-svg {
+        margin-right: 20px;
+      }
+    }
+  }
+}
