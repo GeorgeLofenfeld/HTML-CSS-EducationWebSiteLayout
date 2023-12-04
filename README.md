@@ -6,6 +6,6 @@ Technical Stack:
 * FlexBox
 * Visual Studio Code
 
-https://georgelofenfeld.github.io/WebSiteLayout-the_brand_of_luxerious_fashion/
+https://georgelofenfeld.github.io/TheBrandOfLuxeriousFashion-Web_site_layout/
 
 2021
